@@ -163,8 +163,8 @@ final public class ContactsPickerViewController: UIViewController {
             DispatchQueue.main.async {
                 self.fetchContacts(completionHandler: completionHandler)
             }
-
-        case .denied, .restricted:
+            
+        case .restricted, .denied:
             /// User has denied the current app to access the contacts.
             let productName = Bundle.main.dlgpicker_appName
             let alert = UIAlertController(title: "Permission denied", message: "\(productName) does not have access to contacts. Please, allow the application to access to your contacts.", preferredStyle: .alert)
@@ -177,6 +177,16 @@ final public class ContactsPickerViewController: UIViewController {
                 self.alertController?.dismiss(animated: true)
             }
             alert.show()
+        
+        default:
+            if #available(iOS 18.0, *) {
+                if CNContactStore.authorizationStatus(for: .contacts) == .limited {
+                    /// Handle the `.limited` case only on iOS 18 or newer
+                    DispatchQueue.main.async {
+                        self.fetchContacts(completionHandler: completionHandler)
+                    }
+                }
+            }
         }
     }
     
