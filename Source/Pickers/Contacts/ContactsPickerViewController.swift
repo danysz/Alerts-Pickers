@@ -177,6 +177,14 @@ final public class ContactsPickerViewController: UIViewController {
                 self.alertController?.dismiss(animated: true)
             }
             alert.show()
+        case .limited:
+            DispatchQueue.main.async {
+                self.fetchContacts(completionHandler: completionHandler)
+            }
+        @unknown default:
+            DispatchQueue.main.async {
+                self.fetchContacts(completionHandler: completionHandler)
+            }
         }
     }
     
