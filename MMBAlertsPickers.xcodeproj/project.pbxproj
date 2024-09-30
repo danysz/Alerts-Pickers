@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287C656C2CAA83A7007167A6 /* Package.swift in Resources */ = {isa = PBXBuildFile; fileRef = 287C656B2CAA83A7007167A6 /* Package.swift */; };
 		65CFE76F21EBDE2A00A51361 /* MMBAlertsPickers.h in Headers */ = {isa = PBXBuildFile; fileRef = 65CFE76D21EBDE2A00A51361 /* MMBAlertsPickers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65CFE77321EBDE5600A51361 /* GalleryConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C7E0821771E5300266414 /* GalleryConfiguration.swift */; };
 		65CFE77421EBDE5600A51361 /* ItemControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C7E0921771E5300266414 /* ItemControllerDelegate.swift */; };
@@ -237,6 +238,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287C656B2CAA83A7007167A6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		65CFE76B21EBDE2A00A51361 /* MMBAlertsAndPickers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMBAlertsAndPickers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CFE76D21EBDE2A00A51361 /* MMBAlertsPickers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBAlertsPickers.h; sourceTree = "<group>"; };
 		65CFE76E21EBDE2A00A51361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 		FA3BB26A2008B41B00E06F8F = {
 			isa = PBXGroup;
 			children = (
+				287C656B2CAA83A7007167A6 /* Package.swift */,
 				FA3BB2882008B45600E06F8F /* README.md */,
 				FA3BB2CE2008B9FA00E06F8F /* LICENSE */,
 				FA3BB2A92008B46800E06F8F /* Example */,
@@ -940,6 +943,7 @@
 				FA3BB2BF2008B46900E06F8F /* Countries.bundle in Resources */,
 				FA3BB2AD2008B46800E06F8F /* LaunchScreen.storyboard in Resources */,
 				FA3BB2AC2008B46800E06F8F /* picker_assets.xcassets in Resources */,
+				287C656C2CAA83A7007167A6 /* Package.swift in Resources */,
 				8976FDEE240A90FA002D5017 /* MMBAlertsPickersLocalizable.strings in Resources */,
 				FA3BB2CD2008B98F00E06F8F /* Assets in Resources */,
 				FA3BB2892008B45600E06F8F /* README.md in Resources */,
